@@ -26,7 +26,7 @@ Además de cumplir una función entretenida, esta Pokédex refleja mi compromiso
 - 🌟 Animación de partículas y sonido al transformarse en shiny
 - 🔄 Carga progresiva de Pokémon para optimizar el rendimiento
 
-![Filtos por tipo](https://raw.githubusercontent.com/Luciano-Parodi/Pokedex_Web-PokeAPI/main/pokemon_type_filter.png)
+
 ---
 
 ## 🚀 Tecnologías utilizadas
