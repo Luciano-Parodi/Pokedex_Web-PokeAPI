@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/pokedex.css">
+    <link rel="stylesheet" href="css/tipos_pokemon.css">
+    <link rel="icon" type="image/x-icon" href="img/poke.ico">
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+            <img src="img/pokemon_logo.svg" alt="Logo Pokedex">
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar por nombre…" />
+                
+                <button class="btn btn-header" id="ver-todos">Ver todos</button>
+            </div>
+
+            <div class="drops-container">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-types" class="dropdown-toggle" hidden>
+                <label for="dropdown-types" class="dropdown-trigger">
+                  Filtrar por tipos <span class="arrow">&#x25BC;</span>
+                </label>
+                <div class="dropdown-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><button class="btn btn-header normal" id="normal">Normal</button></li>
+                        <li class="nav-item"><button class="btn btn-header fire" id="fire">Fire</button></li>
+                        <li class="nav-item"><button class="btn btn-header water" id="water">Water</button></li>
+                        <li class="nav-item"><button class="btn btn-header grass" id="grass">Grass</button></li>
+                        <li class="nav-item"><button class="btn btn-header electric" id="electric">Electric</button></li>
+                        <li class="nav-item"><button class="btn btn-header ice" id="ice">Ice</button></li>
+                        <li class="nav-item"><button class="btn btn-header fighting" id="fighting">Fighting</button></li>
+                        <li class="nav-item"><button class="btn btn-header poison" id="poison">Poison</button></li>
+                        <li class="nav-item"><button class="btn btn-header ground" id="ground">Ground</button></li>
+                        <li class="nav-item"><button class="btn btn-header flying" id="flying">Flying</button></li>
+                        <li class="nav-item"><button class="btn btn-header psychic" id="psychic">Psychic</button></li>
+                        <li class="nav-item"><button class="btn btn-header bug" id="bug">Bug</button></li>
+                        <li class="nav-item"><button class="btn btn-header rock" id="rock">Rock</button></li>
+                        <li class="nav-item"><button class="btn btn-header ghost" id="ghost">Ghost</button></li>
+                        <li class="nav-item"><button class="btn btn-header dark" id="dark">Dark</button></li>
+                        <li class="nav-item"><button class="btn btn-header dragon" id="dragon">Dragon</button></li>
+                        <li class="nav-item"><button class="btn btn-header steel" id="steel">Steel</button></li>
+                        <li class="nav-item"><button class="btn btn-header fairy" id="fairy">Fairy</button></li>
+                    </ul>
+                </div>
+              </div>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-gen" class="dropdown-toggle" hidden>
+                <label for="dropdown-gen" class="dropdown-trigger">
+                  Filtrar por región <span class="arrow">&#x25BC;</span>
+                </label>
+                <div class="dropdown-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><button class="btn btn-header kanto" id="kanto">Kanto</button></li>
+                        <li class="nav-item"><button class="btn btn-header johto" id="johto">Johto</button></li>
+                        <li class="nav-item"><button class="btn btn-header hoenn" id="hoenn">Hoenn</button></li>
+                        <li class="nav-item"><button class="btn btn-header sinnoh" id="sinnoh">Sinnoh</button></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon">
+                <!-- Aca va la info de cada Pokemon-->
+            </div>
+        </div>
+
+        <div class="cargar-mas-container">
+            <button id="btnCargarMas" class="btn-cargar-mas">Cargar más</button>
+        </div>
+
+    </main>
+    <script src="js/pokedex.js"></script>
+</body>
+</html>
